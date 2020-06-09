@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+// ***********************************************
+//  Base
+// ***********************************************
+
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  color: $base;
+}
+
+html {
+  font-family: $ff;
+  font-size: 10px;
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+  border: none;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+  &:disabled {
+    background: none;
+  }
+}
+
+.disable {
+  display: none;
+}
