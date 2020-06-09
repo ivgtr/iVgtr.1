@@ -8,13 +8,15 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
-    "start": "nuxt-ts start"
+    "start": "nuxt-ts start",
+    "lint": "eslint ./src/*/*.vue"
   },
   "dependencies": {
-    "ress": "^2.0.4",
-    "nuxt": "^2.0.0",
     "@nuxt/typescript-runtime": "^0.4.0",
-    "@nuxtjs/dotenv": "^1.4.0"
+    "@nuxtjs/dotenv": "^1.4.0",
+    "husky": "^4.2.5",
+    "nuxt": "^2.0.0",
+    "ress": "^2.0.4"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",
@@ -34,5 +36,10 @@
     "sass-loader": "^8.0.2",
     "stylelint": "^13.6.0",
     "stylelint-config-metamo": "0.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint ./src/*/*.vue"
+    }
   }
 }
