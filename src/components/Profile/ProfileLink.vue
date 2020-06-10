@@ -1,7 +1,7 @@
 <template>
   <section class="link">
     <h2>Links</h2>
-    <ul class="flex mt-1">
+    <ul class="flex mt-2">
       <li
         v-for="l in links"
         :key="l.id"
@@ -30,6 +30,10 @@ export default Vue.extend({
       links: [
         {
           icon: ['fab', 'twitter'],
+          link: ''
+        },
+        {
+          icon: ['fab', 'steam'],
           link: ''
         },
         {
