@@ -1,7 +1,10 @@
 <template>
   <div class="icon">
     <div class="icon_inner">
-      <img :src="require('~/assets/images/common/icon.jpg')" alt="icon" />
+      <img
+        src="https://lh3.googleusercontent.com/cYc1di6uHxumh3pM8kdVEeMRmSObMrHo2CCPh4nCHzvQpDNat38dpZ0kr9ygcZFZ5AH96pUnWE8bpIy2AxwjBOUsLGa4cFAeuXr9iYDEn8E0nfzPsWQwzyLUx1Pruuc-E_OeDjy9Ag"
+        alt="icon"
+      />
     </div>
   </div>
 </template>
