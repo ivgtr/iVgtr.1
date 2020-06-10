@@ -1,11 +1,12 @@
 export default {
-  mode: 'spa',
+  mode: 'universal',
   srcDir: 'src/',
   /*
    ** Headers of the page
    */
   head: {
     title: process.env.npm_package_name || '',
+    htmlAttrs: { lang: 'ja' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -32,7 +33,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss', '@nuxt/typescript-build'],
   tailwindcss: {
     configPath: '~/config/tailwind.config.js',
     cssPath: '~/assets/css/tailwind.css',
@@ -67,5 +68,8 @@ export default {
      */
     // extend (config, ctx) {
     // }
+  },
+  router: {
+    base: './'
   }
 }
