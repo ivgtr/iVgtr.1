@@ -66,10 +66,11 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    analyze: true
     // extend (config, ctx) {
     // }
   },
   router: {
-    base: './'
+    base: '/'
   }
 }

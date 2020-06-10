@@ -11,7 +11,7 @@
           :href="l.link"
           target="_brank"
           class="rounded-full flex items-center justify-center w-full h-full hover:text-white"
-          :class="`hover:${l.color}`"
+          :class="l.color"
           ><font-awesome-icon :icon="l.icon"
         /></a>
       </li>
@@ -36,23 +36,23 @@ export default Vue.extend({
         {
           icon: ['fab', 'twitter'],
           link: 'https://twitter.com/mawaru_hana',
-          color: 'bg-blue-500'
+          color: 'hover:bg-blue-500'
         },
         {
           icon: ['fab', 'steam'],
           link: 'https://steamcommunity.com/id/neohgear',
-          color: 'bg-gray-800'
+          color: 'hover:bg-gray-800'
         },
         {
           icon: ['fab', 'github'],
           link: 'https://github.com/ivgtr',
-          color: 'bg-gray-700'
+          color: 'hover:bg-gray-700'
         },
         {
           icon: ['fab', 'amazon'],
           link:
             'https://www.amazon.jp/hz/wishlist/ls/9DPH37UTXZTP?ref_=wl_share',
-          color: 'bg-yellow-400'
+          color: 'hover:bg-yellow-400'
         }
       ]
     }
