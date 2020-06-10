@@ -1,11 +1,26 @@
 <template>
-  <article class="profile"></article>
+  <article class="profile m-3 box-border">
+    <Name />
+    <Description />
+    <Skills />
+    <Link />
+  </article>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
-</script>
+import Name from '~/components/Profile/ProfileName.vue'
+import Description from '~/components/Profile/ProfileDescription.vue'
+import Skills from '~/components/Profile/ProfileSkills.vue'
+import Link from '~/components/Profile/ProfileLink.vue'
 
-<style lang="scss" scoped></style>
+export default Vue.extend({
+  components: {
+    Name,
+    Description,
+    Skills,
+    Link
+  }
+})
+</script>

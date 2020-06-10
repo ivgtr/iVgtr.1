@@ -1,5 +1,5 @@
 <template>
-  <header id="header" class="mt-8">
+  <header id="header" class="fixed">
     <h1>
       <Logo />
     </h1>

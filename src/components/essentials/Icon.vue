@@ -49,7 +49,7 @@ export default Vue.extend({})
     z-index: -1;
     width: 98%;
     height: 98%;
-    background: #ec6d71;
+    background: $gradation;
   }
   &::after {
     bottom: 8px;

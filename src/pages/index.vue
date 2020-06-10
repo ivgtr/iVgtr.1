@@ -1,6 +1,6 @@
 <template>
   <main class="main rounded flex items-center justify-center">
-    <div class="wrapper">
+    <div class="wrapper flex items-center justify-center">
       <Icon />
       <Pro />
     </div>
@@ -25,5 +25,8 @@ export default Vue.extend({
   width: calc(100% - 20px);
   height: calc(100% - 20px);
   background: #fcfcf3;
+  .wrapper {
+    flex-direction: column;
+  }
 }
 </style>
