@@ -4,11 +4,6 @@
 //  Global Variables
 // ***********************************************
 
-// Size
-// =====================================
-
-$tb-min-width: 460px;
-
 // Color
 // =====================================
 $base: #3b3b3b;
@@ -27,4 +22,3 @@ $ff: helvetica neue, -apple-system, 'BlinkMacSystemFont', 'ヒラギノ角ゴ Pr
 // Media Queries
 // =====================================
 $device-land: 'screen and (orientation: landscape)';
-$device-m: 'screen and (min-width: #{$tb-min-width})';
