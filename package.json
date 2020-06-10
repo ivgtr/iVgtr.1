@@ -19,6 +19,9 @@
     "ress": "^2.0.4"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/vue-fontawesome": "^0.1.9",
     "@nuxt/typescript-build": "^0.6.0",
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
@@ -31,6 +34,7 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.2",
     "node-sass": "^4.14.1",
+    "nuxt-fontawesome": "^0.4.0",
     "prettier": "^1.19.1",
     "prettier-config-metamo": "0.0.3",
     "sass-loader": "^8.0.2",

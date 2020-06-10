@@ -44,8 +44,17 @@ export default {
   modules: [
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    'nuxt-fontawesome'
   ],
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['faTwitter', 'faGithub', 'faAmazon']
+      }
+    ]
+  },
   styleResources: {
     scss: ['~/assets/styles/functions.scss']
   },
