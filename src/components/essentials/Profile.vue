@@ -1,5 +1,5 @@
 <template>
-  <article class="profile m-3 box-border">
+  <article class="profile m-3 mt-5 sm:mt-3 box-border sm:ml-16 max-w-xs">
     <Name />
     <Description />
     <Skills />

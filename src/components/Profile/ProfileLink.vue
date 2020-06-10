@@ -7,7 +7,11 @@
         :key="l.id"
         class="rounded-full h-8 w-8 flex items-center justify-center ml-2 first:ml-0"
       >
-        <a :href="l.link" target="_brank"
+        <a
+          :href="l.link"
+          target="_brank"
+          class="rounded-full flex items-center justify-center w-full h-full hover:text-white"
+          :class="`hover:${l.color}`"
           ><font-awesome-icon :icon="l.icon"
         /></a>
       </li>
@@ -23,6 +27,7 @@ type dataTypes = {
 type links = {
   icon: string[]
   link: string
+  color: string
 }
 export default Vue.extend({
   data(): dataTypes {
@@ -30,19 +35,24 @@ export default Vue.extend({
       links: [
         {
           icon: ['fab', 'twitter'],
-          link: ''
+          link: 'https://twitter.com/mawaru_hana',
+          color: 'bg-blue-500'
         },
         {
           icon: ['fab', 'steam'],
-          link: ''
+          link: 'https://steamcommunity.com/id/neohgear',
+          color: 'bg-gray-800'
         },
         {
           icon: ['fab', 'github'],
-          link: ''
+          link: 'https://github.com/ivgtr',
+          color: 'bg-gray-700'
         },
         {
           icon: ['fab', 'amazon'],
-          link: ''
+          link:
+            'https://www.amazon.jp/hz/wishlist/ls/9DPH37UTXZTP?ref_=wl_share',
+          color: 'bg-yellow-400'
         }
       ]
     }
@@ -67,6 +77,9 @@ ul {
       content: '';
       background: $gradation;
       border-radius: 50%;
+    }
+    & > a {
+      transition: all 0.1s ease-in;
     }
   }
 }

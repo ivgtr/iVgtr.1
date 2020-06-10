@@ -7,7 +7,8 @@
 module.exports = {
   theme: {},
   variants: {
-    margin: ['first', 'last']
+    margin: ['responsive', 'first', 'last'],
+    backgroundColor: ['hover']
   },
   plugins: [],
   purge: {

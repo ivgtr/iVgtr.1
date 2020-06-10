@@ -1,8 +1,7 @@
 <template>
   <div class="icon">
     <div class="icon_inner">
-      <!-- <img :src="require('~/assets/images/common/icon.jpg')" alt="icon" /> -->
-      <img :src="require('~/assets/images/common/dicon.jpg')" alt="icon" />
+      <img :src="require('~/assets/images/common/icon.jpg')" alt="icon" />
     </div>
   </div>
 </template>
