@@ -3,7 +3,7 @@
     <h2>Links</h2>
     <ul class="flex mt-2">
       <li
-        v-for="l in links"
+        v-for="(l, n) in links"
         :key="l.id"
         class="rounded-full h-8 w-8 flex items-center justify-center ml-2 first:ml-0"
       >
@@ -13,6 +13,7 @@
           class="rounded-full flex items-center justify-center w-full h-full hover:text-white"
           :class="l.color"
           :aria-label="l.title"
+          :style="`animation-delay:${n * 0.1 + 0.1}s`"
           ><font-awesome-icon :icon="l.icon"
         /></a>
       </li>
@@ -85,7 +86,8 @@ ul {
       border-radius: 50%;
     }
     & > a {
-      transition: all 0.1s ease-in;
+      transition: all 0.1s ease-in 0.05;
+      animation: scaleIn 0.3s ease-in backwards;
     }
   }
 }
