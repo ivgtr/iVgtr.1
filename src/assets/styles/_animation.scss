@@ -12,3 +12,29 @@
     opacity: 1;
   }
 }
+
+@keyframes scaleIn {
+  from,
+  0%,
+  60%,
+  75% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+    transform: rotate(15deg);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  75%,
+  to {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
+}

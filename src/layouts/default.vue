@@ -11,8 +11,6 @@ export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/styles/styles.scss';
-
 .root {
   position: relative;
   justify-items: center;

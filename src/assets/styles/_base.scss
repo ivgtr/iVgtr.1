@@ -15,19 +15,7 @@ body {
 
 html {
   font-family: $ff;
-  font-size: 10px;
-  body {
-    font-size: 1.2rem;
-  }
 }
-
-a,
-a:visited {
-  color: #fff;
-  text-decoration: none;
-  border: none;
-}
-
 button {
   padding: 0;
   background: none;
@@ -47,8 +35,4 @@ textarea {
   &:disabled {
     background: none;
   }
-}
-
-.disable {
-  display: none;
 }

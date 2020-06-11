@@ -41,7 +41,13 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['ress'],
+  css: [
+    'ress',
+    {
+      src: '~/assets/styles/styles.scss',
+      lang: 'scss'
+    }
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -74,7 +80,7 @@ export default {
     ]
   },
   styleResources: {
-    scss: ['~/assets/styles/functions.scss']
+    scss: ['~/assets/styles/functions.scss', '~/assets/styles/_animation.scss']
   },
   /*
    ** Build configuration
