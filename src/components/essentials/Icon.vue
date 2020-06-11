@@ -2,7 +2,7 @@
   <div class="icon">
     <div class="icon_inner">
       <img
-        src="https://lh3.googleusercontent.com/cYc1di6uHxumh3pM8kdVEeMRmSObMrHo2CCPh4nCHzvQpDNat38dpZ0kr9ygcZFZ5AH96pUnWE8bpIy2AxwjBOUsLGa4cFAeuXr9iYDEn8E0nfzPsWQwzyLUx1Pruuc-E_OeDjy9Ag"
+        src="https://lh3.googleusercontent.com/OSx52ADl3DL4RkhYvxcZzLu69Y5eytlmgqMm3izAXxZQ9k0mEF34Q8iQlgGKJYLrpdCJGSCvlNi0IMeUu0-oCWHl-cpSM0Uyxdhr3b_UdXGHIu4uDV8PpbiAsRtSlAxyNSjvyLEb7g"
         alt="icon"
         rel="preload"
       />
