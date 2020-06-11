@@ -28,7 +28,7 @@ export default {
         hid: 'og:image',
         property: 'og:image',
         content:
-          'https://lh3.googleusercontent.com/gLHukE-ObJ2hM-YMSUghThADn47rKXltREoExmIxTr7LiK2Kr-jPMOTGVcXl1oPkJLbTBChBr55z16u1AcG6OSlZtkBenh3zURNuDFJpGVkBzSGbjui_rVSfNEhPZaGBCtw3p26ptQ=w600'
+          'https://lh3.googleusercontent.com/D4SiydTja38u0dV9gfjR0CMWmSdV59qBYBQt6KuHl_Q8AUhJBIMOAuB-nmhyIHT8HvLFLZUpATz7XLAo6UxxF4jv2zSpv5N75mJ0vUr6p1Syf-UFQtYvAB58Y3KI8aiV1gnQ1ZC2mg=w1200'
       },
       { name: 'twitter:card', content: 'summary_large_image' }
     ],
