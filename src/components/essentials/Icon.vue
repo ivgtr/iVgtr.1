@@ -30,16 +30,17 @@ export default Vue.extend({})
     box-sizing: border-box;
     width: 100px;
     height: 100px;
+    padding: 3px;
     overflow: hidden;
     background: #fff;
     background-size: cover;
     border-radius: 50%;
-    box-shadow: 0 0 0 3px #fff;
+    box-shadow: 0 0 0 4px #fff inset;
+    animation: scaleIn 0.3s ease-in 0.1s backwards;
     img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      animation: scaleIn 0.3s ease-in 0.1s backwards;
       object-fit: contain;
     }
   }
