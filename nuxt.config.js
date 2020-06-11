@@ -29,7 +29,8 @@ export default {
         property: 'og:image',
         content:
           'https://lh3.googleusercontent.com/gLHukE-ObJ2hM-YMSUghThADn47rKXltREoExmIxTr7LiK2Kr-jPMOTGVcXl1oPkJLbTBChBr55z16u1AcG6OSlZtkBenh3zURNuDFJpGVkBzSGbjui_rVSfNEhPZaGBCtw3p26ptQ=w600'
-      }
+      },
+      { name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
