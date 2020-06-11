@@ -46,7 +46,8 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
+    ['@nuxtjs/google-analytics', { id: 'UA-112771117-2' }]
   ],
   fontawesome: {
     imports: [
