@@ -12,6 +12,7 @@
           target="_brank"
           class="rounded-full flex items-center justify-center w-full h-full hover:text-white"
           :class="l.color"
+          :aria-label="l.title"
           ><font-awesome-icon :icon="l.icon"
         /></a>
       </li>
@@ -26,6 +27,7 @@ type dataTypes = {
 }
 type links = {
   icon: string[]
+  title: string
   link: string
   color: string
 }
@@ -35,21 +37,25 @@ export default Vue.extend({
       links: [
         {
           icon: ['fab', 'twitter'],
+          title: 'Twitter',
           link: 'https://twitter.com/mawaru_hana',
           color: 'hover:bg-blue-500'
         },
         {
           icon: ['fab', 'steam'],
+          title: 'Steam',
           link: 'https://steamcommunity.com/id/neohgear',
           color: 'hover:bg-gray-800'
         },
         {
           icon: ['fab', 'github'],
+          title: 'Github',
           link: 'https://github.com/ivgtr',
           color: 'hover:bg-gray-700'
         },
         {
           icon: ['fab', 'amazon'],
+          title: '欲しい物リスト',
           link:
             'https://www.amazon.jp/hz/wishlist/ls/9DPH37UTXZTP?ref_=wl_share',
           color: 'hover:bg-yellow-400'
