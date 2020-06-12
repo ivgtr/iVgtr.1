@@ -1,11 +1,12 @@
 <template>
   <div class="icon">
-    <div class="icon_inner">
+    <div class="icon_inner relative">
       <img
-        src="https://lh3.googleusercontent.com/OSx52ADl3DL4RkhYvxcZzLu69Y5eytlmgqMm3izAXxZQ9k0mEF34Q8iQlgGKJYLrpdCJGSCvlNi0IMeUu0-oCWHl-cpSM0Uyxdhr3b_UdXGHIu4uDV8PpbiAsRtSlAxyNSjvyLEb7g"
+        :src="require('~/assets/images/icon.jpg')"
         alt="icon"
         rel="preload"
       />
+      <div class="absolute bg-yellow-400 inset-0 rounded-full"></div>
     </div>
   </div>
 </template>
@@ -36,12 +37,15 @@ export default Vue.extend({})
     background-size: cover;
     border-radius: 50%;
     box-shadow: 0 0 0 4px #fff inset;
-    animation: scaleIn 0.3s ease-in 0.1s backwards;
     img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
       object-fit: contain;
+      animation: scaleIn 0.3s ease-in-out 0.3s backwards;
+    }
+    & > div {
+      animation: scaleDown 0.2s ease-in 0.1s both;
     }
   }
   &::before,

@@ -10,11 +10,6 @@ import Vue from 'vue'
 export default Vue.extend({
   data() {
     return {}
-  },
-  mounted(): void {
-    const img = document.createElement('img')
-    img.src =
-      'https://lh3.googleusercontent.com/OSx52ADl3DL4RkhYvxcZzLu69Y5eytlmgqMm3izAXxZQ9k0mEF34Q8iQlgGKJYLrpdCJGSCvlNi0IMeUu0-oCWHl-cpSM0Uyxdhr3b_UdXGHIu4uDV8PpbiAsRtSlAxyNSjvyLEb7g'
   }
 })
 </script>

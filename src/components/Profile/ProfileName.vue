@@ -12,6 +12,9 @@ export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  animation: slideIn 0.3s ease-in-out 0.5s backwards;
+}
 .deco {
   background: $gradation;
   background-clip: text;

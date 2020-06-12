@@ -3,9 +3,10 @@
     <h2>Skills</h2>
     <ul class="flex flex-wrap">
       <li
-        v-for="l in chips"
+        v-for="(l, n) in chips"
         :key="l.id"
         class="text-white bg-gray-700 flex text-xs ml-2 mt-1 "
+        :style="`animation-delay:${n * 0.1 + 1.0}s`"
       >
         <span class="inline-block h-full w-1" :class="l.color"></span>
         <p class="px-2">{{ l.name }}</p>
@@ -39,9 +40,18 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.deco {
-  background: $gradation;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+h2 {
+  animation: slideIn 0.3s ease-in-out 0.5s backwards;
+}
+ul {
+  li {
+    animation: slideIn 0.3s ease-in-out backwards;
+
+    .deco {
+      background: $gradation;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
 </style>

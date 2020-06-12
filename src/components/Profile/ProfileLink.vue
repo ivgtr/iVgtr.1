@@ -5,7 +5,8 @@
       <li
         v-for="(l, n) in links"
         :key="l.id"
-        class="rounded-full h-8 w-8 flex items-center justify-center ml-2 first:ml-0"
+        class="rounded-full h-8 w-8 flex items-center justify-center ml-2 first:ml-0 box-border border border-pink-500 border-solid"
+        :style="`animation-delay:${n * 0.05 + 1.2}s`"
       >
         <a
           :href="l.link"
@@ -13,7 +14,6 @@
           class="rounded-full flex items-center justify-center w-full h-full hover:text-white"
           :class="l.color"
           :aria-label="l.title"
-          :style="`animation-delay:${n * 0.1 + 0.1}s`"
           ><font-awesome-icon :icon="l.icon"
         /></a>
       </li>
@@ -68,27 +68,17 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+h2 {
+  animation: slideIn 0.3s ease-in-out 0.5s backwards;
+}
 ul {
   position: relative;
   z-index: 5;
   li {
     position: relative;
     background: #fcfcf3;
-    &::after {
-      position: absolute;
-      top: -1px;
-      left: -1px;
-      z-index: -1;
-      width: calc(100% + 2px);
-      height: calc(100% + 2px);
-      content: '';
-      background: $gradation;
-      border-radius: 50%;
-    }
-    & > a {
-      transition: all 0.1s ease-in 0.05;
-      animation: scaleIn 0.3s ease-in backwards;
-    }
+    transition: all 0.1s ease-in 0.05;
+    animation: scaleIn 0.3s ease-in-out backwards;
   }
 }
 </style>
