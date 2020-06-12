@@ -6,7 +6,6 @@
         alt="icon"
         rel="preload"
       />
-      <div class="absolute bg-yellow-400 inset-0 rounded-full"></div>
     </div>
   </div>
 </template>
@@ -42,10 +41,7 @@ export default Vue.extend({})
       height: 100%;
       border-radius: 50%;
       object-fit: contain;
-      animation: scaleIn 0.3s ease-in-out 0.3s backwards;
-    }
-    & > div {
-      animation: scaleDown 0.2s ease-in 0.1s both;
+      animation: scaleIn 0.3s ease-in-out 0.1s backwards;
     }
   }
   &::before,

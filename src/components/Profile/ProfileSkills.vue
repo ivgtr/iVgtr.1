@@ -41,7 +41,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 h2 {
-  animation: slideIn 0.3s ease-in-out 0.5s backwards;
+  animation: slideIn 0.3s ease-in-out 0.4s backwards;
 }
 ul {
   li {
