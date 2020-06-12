@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [10.x, 12.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -27,7 +27,7 @@ jobs:
     - name: npm install, generate
       run: |
            npm install
-           npm run generate --if-present
+           npm run generate
     - name: deploy to Firebase Hosting
       uses: w9jds/firebase-action@master
       with:
