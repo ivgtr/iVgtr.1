@@ -50,7 +50,7 @@ const config: OverConfiguration = {
   css: [
     'ress',
     {
-      src: '~/assets/styles/styles.scss',
+      src: '~/assets/styles/scss/styles.scss',
       lang: 'scss'
     }
   ],
@@ -64,7 +64,7 @@ const config: OverConfiguration = {
   buildModules: ['@nuxtjs/tailwindcss', '@nuxt/typescript-build'],
   tailwindcss: {
     configPath: '~/config/tailwind.config.js',
-    cssPath: '~/assets/css/tailwind.css',
+    cssPath: '~/assets/styles/css/tailwind.css',
     exposeConfig: false
   },
   /*
@@ -86,7 +86,10 @@ const config: OverConfiguration = {
     ]
   },
   styleResources: {
-    scss: ['~/assets/styles/functions.scss', '~/assets/styles/_animation.scss']
+    scss: [
+      '~/assets/styles/scss/functions.scss',
+      '~/assets/styles/scss/_animation.scss'
+    ]
   },
   /*
    ** Build configuration
