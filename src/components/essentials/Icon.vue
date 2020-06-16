@@ -1,18 +1,21 @@
 <template>
   <div class="icon">
     <div class="icon_inner relative">
-      <img
-        :src="require('~/assets/images/icon.jpg')"
-        alt="icon"
-        rel="preload"
-      />
+      <img :src="image" alt="icon" rel="preload" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({})
+export default Vue.extend({
+  async asyncData() {
+    const image = await require('~/assets/images/icon.jpg')
+    return {
+      image
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>
