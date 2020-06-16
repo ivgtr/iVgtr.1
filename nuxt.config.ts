@@ -19,7 +19,7 @@ const config: OverConfiguration = {
       {
         hid: 'description',
         name: 'description',
-        content: 'ivgtr.me'
+        content: 'irotoridori'
       },
       { hid: 'og:site_name', property: 'og:site_name', content: 'irotoridori' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
@@ -43,7 +43,7 @@ const config: OverConfiguration = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#fcfc67' },
   /*
    ** Global CSS
    */
@@ -61,7 +61,16 @@ const config: OverConfiguration = {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/tailwindcss', '@nuxt/typescript-build'],
+  buildModules: [
+    '@nuxtjs/tailwindcss',
+    [
+      '@nuxt/typescript-build',
+      {
+        typeCheck: true,
+        ignoreNotFoundWarnings: true
+      }
+    ]
+  ],
   tailwindcss: {
     configPath: '~/config/tailwind.config.js',
     cssPath: '~/assets/styles/css/tailwind.css',
@@ -72,11 +81,16 @@ const config: OverConfiguration = {
    */
   modules: [
     // Doc: https://github.com/nuxt-community/dotenv-module
+    '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     'nuxt-fontawesome',
     ['@nuxtjs/google-analytics', { id: 'UA-112771117-2' }]
   ],
+  manifest: {
+    name: 'irotoridori',
+    lang: 'ja'
+  },
   fontawesome: {
     imports: [
       {
