@@ -1,4 +1,10 @@
-export default {
+import { Configuration } from '@nuxt/types'
+
+interface OverConfiguration extends Configuration {
+  css?: any
+}
+
+const config: OverConfiguration = {
   mode: 'universal',
   srcDir: 'src/',
   /*
@@ -97,3 +103,5 @@ export default {
     base: '/'
   }
 }
+
+export default config
