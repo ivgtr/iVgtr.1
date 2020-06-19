@@ -22,6 +22,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Make envfile
+      uses: SpicyPizza/create-envfile@v1
+      with:
+        GA_KEY: ${{ secrets.GA_KEY }}
     - name: nuxt build
       run: |
            npm install
@@ -32,4 +36,3 @@ jobs:
         args: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-        GA_KEY: ${{ secrets.GA_KEY }}
