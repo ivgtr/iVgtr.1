@@ -25,10 +25,11 @@ jobs:
     - name: nuxt build
       run: |
            npm install
-           npm run generate
+           npm run generate -- GA_KEY=$GA_KEY
     - name: deploy to Firebase Hosting
       uses: w9jds/firebase-action@master
       with:
         args: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        GA_KEY: ${{ secrets.GA_KEY }}
