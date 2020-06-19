@@ -4,6 +4,7 @@ interface OverConfiguration extends Configuration {
   css?: any
 }
 const env = {
+  STAGE_ENV: process.env.STAGE_ENV,
   GA_KEY: process.env.GA_KEY
 }
 
