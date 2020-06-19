@@ -23,7 +23,7 @@ const config: OverConfiguration = {
       {
         hid: 'description',
         name: 'description',
-        content: 'irotoridori'
+        content: 'これは私(ivgtr)を表すportfolioサイトです'
       },
       { hid: 'og:site_name', property: 'og:site_name', content: 'irotoridori' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
@@ -32,7 +32,7 @@ const config: OverConfiguration = {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'ivgtr.me'
+        content: 'ivgtr is me'
       },
       {
         hid: 'og:image',
