@@ -125,6 +125,9 @@ const config: OverConfiguration = {
     // extend (config, ctx) {
     // }
   },
+  dotenv: {
+    path: process.cwd()
+  },
   router: {
     base: '/'
   }
