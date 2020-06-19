@@ -25,7 +25,7 @@ jobs:
     - name: nuxt build
       run: |
            npm install
-           npm run generate -- GA_KEY=$GA_KEY
+           npm run generate
     - name: deploy to Firebase Hosting
       uses: w9jds/firebase-action@master
       with:
