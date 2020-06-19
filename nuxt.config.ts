@@ -1,10 +1,14 @@
 import { Configuration } from '@nuxt/types'
-
+require('dotenv').config()
 interface OverConfiguration extends Configuration {
   css?: any
 }
+const env = {
+  GA_KEY: process.env.GA_KEY
+}
 
 const config: OverConfiguration = {
+  env,
   mode: 'universal',
   srcDir: 'src/',
   /*
@@ -85,7 +89,7 @@ const config: OverConfiguration = {
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     'nuxt-fontawesome',
-    ['@nuxtjs/google-analytics', { id: 'UA-112771117-2' }]
+    ['@nuxtjs/google-analytics', { id: process.env.GA_KEY }]
   ],
   manifest: {
     name: 'irotoridori',
