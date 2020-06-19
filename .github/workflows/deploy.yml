@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Create .env file
-        run: echo "${{ secrets.GA_KEY }}" > .env
+      run: echo "${{ secrets.GA_KEY }}" > .env
     - name: nuxt build
       run: |
            npm install
