@@ -101,6 +101,10 @@ const config: OverConfiguration = {
       {
         set: '@fortawesome/free-brands-svg-icons',
         icons: ['faTwitter', 'faGithub', 'faAmazon', 'faSteam']
+      },
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['faBlog']
       }
     ]
   },

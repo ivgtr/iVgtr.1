@@ -43,6 +43,12 @@ export default Vue.extend({
           color: 'hover:bg-blue-500'
         },
         {
+          icon: ['fas', 'blog'],
+          title: 'blog',
+          link: 'https://ivgtr.hatenablog.jp/',
+          color: 'hover:bg-blue-800'
+        },
+        {
           icon: ['fab', 'steam'],
           title: 'Steam',
           link: 'https://steamcommunity.com/id/neohgear',
