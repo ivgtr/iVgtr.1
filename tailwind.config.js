@@ -13,13 +13,14 @@ module.exports = {
   plugins: [],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-    enabled: () => {
-      if (process.env.STAGE_ENV === 'local') {
-        return false
-      } else {
-        return true
-      }
-    },
-    content: ['../**/*.vue', '../../dist/**/*.html', '../../dist/**/*.js']
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      './src/components/**/*.vue',
+      './src/layouts/**/*.vue',
+      './src/pages/**/*.vue',
+      './src/plugins/**/*.js',
+      './src/plugins/**/*.ts',
+      './nuxt.config.ts'
+    ]
   }
 }

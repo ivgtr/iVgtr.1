@@ -77,7 +77,7 @@ const config: OverConfiguration = {
     ]
   ],
   tailwindcss: {
-    configPath: '~/config/tailwind.config.js',
+    configPath: '~/../tailwind.config.js',
     cssPath: '~/assets/styles/css/tailwind.css',
     exposeConfig: false
   },
