@@ -30,7 +30,7 @@
     "@nuxtjs/tailwindcss": "^2.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
-    "eslint-config-metamo": "0.0.8",
+    "eslint-config-metamo": "^0.0.8",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.2",
