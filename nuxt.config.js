@@ -73,14 +73,8 @@ const config = {
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     'nuxt-fontawesome',
-    ['@nuxtjs/google-analytics', { id: process.env.GA_KEY }],
-    'nuxt-webfontloader'
+    ['@nuxtjs/google-analytics', { id: process.env.GA_KEY }]
   ],
-  webfontloader: {
-    google: {
-      families: ['Noto+Sans+JP:wght@400;700&display=swap']
-    }
-  },
   manifest: {
     name: 'irotoridori',
     lang: 'ja'
