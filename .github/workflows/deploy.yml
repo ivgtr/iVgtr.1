@@ -27,7 +27,7 @@ jobs:
     - name: nuxt build
       run: |
            npm install
-           npm run generate
+           npm run build
     - name: deploy to Firebase Hosting
       uses: w9jds/firebase-action@master
       with:

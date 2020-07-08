@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "nuxt-ts",
     "generate": "nuxt generate",
+    "build": "nuxt build --target static && nuxt export",
     "lint": "eslint ./src/*/*.vue"
   },
   "dependencies": {
