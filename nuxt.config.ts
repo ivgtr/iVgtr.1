@@ -11,6 +11,7 @@ const env = {
 const config: OverConfiguration = {
   env,
   mode: 'universal',
+  target: 'static',
   srcDir: 'src/',
   /*
    ** Headers of the page
@@ -59,6 +60,7 @@ const config: OverConfiguration = {
       lang: 'scss'
     }
   ],
+  components: true,
   /*
    ** Plugins to load before mounting the App
    */
@@ -77,15 +79,11 @@ const config: OverConfiguration = {
     ]
   ],
   tailwindcss: {
-    configPath: '~/../tailwind.config.js',
+    configPath: '../tailwind.config.js',
     cssPath: '~/assets/styles/css/tailwind.css',
     exposeConfig: false
   },
-  /*
-   ** Nuxt.js modules
-   */
   modules: [
-    // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
@@ -109,22 +107,9 @@ const config: OverConfiguration = {
     ]
   },
   styleResources: {
-    scss: [
-      '~/assets/styles/scss/functions.scss',
-      '~/assets/styles/scss/_animation.scss'
-    ]
+    scss: ['~/assets/styles/scss/functions.scss']
   },
-  /*
-   ** Build configuration
-   */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    // analyze: true
-    // extend (config, ctx) {
-    // }
-  },
+  build: {},
   dotenv: {
     path: process.cwd()
   },
