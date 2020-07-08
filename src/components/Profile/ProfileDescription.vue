@@ -2,7 +2,7 @@
   <section class="description">
     <h2>Profiles</h2>
     <p style="animation-delay:0.8s">🎂96/11/12</p>
-    <p style="animation-delay:0.85s">Geeks who consume content.</p>
+    <p style="animation-delay:0.85s">We're Geeks who consume content.</p>
     <h2>Jobs</h2>
     <p style="animation-delay:0.9s">OTAKU.</p>
     <h2>Likes</h2>
