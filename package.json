@@ -5,9 +5,10 @@
   "author": "ivgtr",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
+    "dev": "nuxt",
     "generate": "nuxt generate",
     "build": "nuxt build --target static && nuxt export",
+    "serve": "nuxt serve",
     "lint": "eslint ./src/*/*.vue"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "husky": "^4.2.5",
     "nuxt": "^2.0.0",
+    "nuxt-webfontloader": "^1.1.0",
     "ress": "^2.0.4"
   },
   "devDependencies": {

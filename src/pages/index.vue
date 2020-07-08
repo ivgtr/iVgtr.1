@@ -4,7 +4,7 @@
       class="flex flex-wrap items-center justify-center flex-col sm:flex-row"
     >
       <Icon />
-      <LazyPro />
+      <Profile />
     </div>
   </main>
 </template>

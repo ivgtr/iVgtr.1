@@ -1,21 +1,18 @@
-import { Configuration } from '@nuxt/types'
+// import { Configuration } from '@nuxt/types'
 require('dotenv').config()
-interface OverConfiguration extends Configuration {
-  css?: any
-}
+// interface OverConfiguration extends Configuration {
+//   css?: any
+// }
 const env = {
   STAGE_ENV: process.env.STAGE_ENV,
   GA_KEY: process.env.GA_KEY
 }
 
-const config: OverConfiguration = {
+const config = {
   env,
   mode: 'universal',
   target: 'static',
   srcDir: 'src/',
-  /*
-   ** Headers of the page
-   */
   head: {
     title: process.env.npm_package_name || 'irotoridori',
     htmlAttrs: { lang: 'ja', prefix: 'og: http://ogp.me/ns#' },
@@ -46,13 +43,7 @@ const config: OverConfiguration = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-  /*
-   ** Customize the progress-bar color
-   */
   loading: { color: '#fcfc67' },
-  /*
-   ** Global CSS
-   */
   css: [
     'ress',
     {
@@ -61,13 +52,7 @@ const config: OverConfiguration = {
     }
   ],
   components: true,
-  /*
-   ** Plugins to load before mounting the App
-   */
   plugins: [],
-  /*
-   ** Nuxt.js dev-modules
-   */
   buildModules: [
     '@nuxtjs/tailwindcss',
     [
@@ -88,8 +73,14 @@ const config: OverConfiguration = {
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     'nuxt-fontawesome',
-    ['@nuxtjs/google-analytics', { id: process.env.GA_KEY }]
+    ['@nuxtjs/google-analytics', { id: process.env.GA_KEY }],
+    'nuxt-webfontloader'
   ],
+  webfontloader: {
+    google: {
+      families: ['Noto+Sans+JP:wght@400;700&display=swap']
+    }
+  },
   manifest: {
     name: 'irotoridori',
     lang: 'ja'
