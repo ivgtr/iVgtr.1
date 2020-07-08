@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt-ts",
-    "generate": "nuxt-ts generate",
+    "generate": "nuxt generate",
     "lint": "eslint ./src/*/*.vue"
   },
   "dependencies": {
