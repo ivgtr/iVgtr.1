@@ -1,7 +1,7 @@
 <template>
   <section class="name">
     <h2 class="text-3xl text-gray-700">
-      <span class="deco text-2xl mr-1">@</span>ivgtr
+      <span class="deco text-2xl mr-1">@</span>iVgtr
     </h2>
   </section>
 </template>

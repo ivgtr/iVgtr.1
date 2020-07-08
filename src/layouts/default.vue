@@ -1,5 +1,5 @@
 <template>
-  <div class="root grid items-center overflow-hidden">
+  <div class="root relative grid items-center overflow-hidden">
     <nuxt />
   </div>
 </template>
@@ -16,7 +16,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .root {
-  position: relative;
   justify-items: center;
   width: 100%;
   min-height: 100vh;

@@ -84,7 +84,7 @@ ul {
     position: relative;
     background: #fcfcf3;
     transition: all 0.1s ease-in 0.05;
-    animation: scaleIn 0.3s ease-in-out backwards;
+    animation: scaleIn 0.4s ease-in-out backwards;
   }
 }
 </style>

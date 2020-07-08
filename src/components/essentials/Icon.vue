@@ -41,7 +41,7 @@ export default Vue.extend({})
       height: 100%;
       border-radius: 50%;
       object-fit: contain;
-      animation: scaleIn 0.3s ease-in-out 0.1s backwards;
+      animation: scaleInDown 0.3s ease-in-out 0.1s backwards;
     }
   }
   &::before,

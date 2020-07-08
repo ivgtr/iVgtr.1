@@ -4,22 +4,15 @@
       class="flex flex-wrap items-center justify-center flex-col sm:flex-row"
     >
       <Icon />
-      <Pro />
+      <LazyPro />
     </div>
   </main>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Icon from '~/components/essentials/Icon.vue'
-import Pro from '~/components/essentials/Profile.vue'
 
-export default Vue.extend({
-  components: {
-    Icon,
-    Pro
-  }
-})
+export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
