@@ -22,7 +22,7 @@ const config = {
       {
         hid: 'description',
         name: 'description',
-        content: 'これは私(ivgtr)を表すportfolioサイトです'
+        content: '世界の中身はここね'
       },
       { hid: 'og:site_name', property: 'og:site_name', content: 'irotoridori' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
@@ -31,7 +31,7 @@ const config = {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'ivgtr is me'
+        content: 'Virtual Reality era begins'
       },
       {
         hid: 'og:image',
