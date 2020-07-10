@@ -94,6 +94,9 @@ const config = {
   styleResources: {
     scss: ['~/assets/styles/scss/functions.scss']
   },
+  generate: {
+    fallback: true
+  },
   build: {},
   dotenv: {
     path: process.cwd()
