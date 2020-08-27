@@ -63,8 +63,7 @@ export default Vue.extend({
         {
           icon: ['fab', 'amazon'],
           title: '欲しい物リスト',
-          link:
-            'https://www.amazon.jp/hz/wishlist/ls/9DPH37UTXZTP?ref_=wl_share',
+          link: 'https://amz.run/3WX9',
           color: 'hover:bg-yellow-400'
         }
       ]
