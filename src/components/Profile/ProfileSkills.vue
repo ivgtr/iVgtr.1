@@ -3,13 +3,13 @@
     <h2>Skills</h2>
     <ul class="flex flex-wrap">
       <li
-        v-for="(l, n) in chips"
-        :key="l.id"
+        v-for="(item, n) in chip"
+        :key="item.id"
         class="text-white bg-gray-700 flex text-xs ml-2 mt-1 "
         :style="`animation-delay:${n * 0.1 + 1.0}s`"
       >
-        <span class="inline-block h-full w-1" :class="l.color"></span>
-        <p class="px-2">{{ l.name }}</p>
+        <span class="inline-block h-full w-1" :class="item.color"></span>
+        <p class="px-2">{{ item.name }}</p>
       </li>
     </ul>
   </section>
@@ -17,10 +17,20 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
+type localData = {
+  chip: chip[]
+}
+
+type chip = {
+  name: string
+  color: string
+}
+
 export default Vue.extend({
   data() {
     return {
-      chips: [
+      chip: [
         {
           name: 'TypeScript',
           color: 'bg-blue-500'

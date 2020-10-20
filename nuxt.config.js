@@ -87,7 +87,7 @@ const config = {
       },
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faBlog']
+        icons: ['faBlog', 'faCoffee']
       }
     ]
   },

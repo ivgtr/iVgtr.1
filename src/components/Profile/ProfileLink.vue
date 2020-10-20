@@ -3,18 +3,18 @@
     <h2>Links</h2>
     <ul class="flex mt-2">
       <li
-        v-for="(l, n) in links"
-        :key="l.id"
+        v-for="(item, n) in link"
+        :key="item.id"
         class="rounded-full h-8 w-8 flex items-center justify-center ml-2 first:ml-0 box-border border border-pink-500 border-solid"
         :style="`animation-delay:${n * 0.05 + 1.2}s`"
       >
         <a
-          :href="l.link"
+          :href="item.link"
           target="_brank"
           class="rounded-full flex items-center justify-center w-full h-full hover:text-white"
-          :class="l.color"
-          :aria-label="l.title"
-          ><font-awesome-icon :icon="l.icon"
+          :class="item.color"
+          :aria-label="item.title"
+          ><font-awesome-icon :icon="item.icon"
         /></a>
       </li>
     </ul>
@@ -23,19 +23,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
-type dataTypes = {
-  links: links[]
+type localData = {
+  link: link[]
 }
-type links = {
+type link = {
   icon: string[]
   title: string
   link: string
   color: string
 }
 export default Vue.extend({
-  data(): dataTypes {
+  data(): localData {
     return {
-      links: [
+      link: [
         {
           icon: ['fab', 'twitter'],
           title: 'Twitter',
@@ -65,6 +65,12 @@ export default Vue.extend({
           title: '欲しい物リスト',
           link: 'https://amz.run/3WX9',
           color: 'hover:bg-yellow-400'
+        },
+        {
+          icon: ['fas', 'coffee'],
+          title: '古事記Donate',
+          link: 'https://www.buymeacoffee.com/ivgtr',
+          color: 'hover:bg-orange-800'
         }
       ]
     }
@@ -82,8 +88,10 @@ ul {
   li {
     position: relative;
     background: #fcfcf3;
-    transition: all 0.1s ease-in 0.05;
     animation: scaleIn 0.4s ease-in-out backwards;
+    & > a {
+      transition: all 0.1s ease-in 0.05s;
+    }
   }
 }
 </style>
