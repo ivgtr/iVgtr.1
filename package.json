@@ -5,10 +5,11 @@
   "author": "ivgtr",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --port 2434",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "proxy": "ngrok http 2434 -hostname=2434.jp.ngrok.io -region jp"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
