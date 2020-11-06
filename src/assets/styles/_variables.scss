@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+// ***********************************************
+//  Global Variables
+// ***********************************************
+
+// Color
+// =====================================
+$base: #3b3b3b;
+$brown: #707070;
+$shadow: #eaeaea;
+$gradation: no-repeat center center/300% 300%
+  linear-gradient(130deg, #3f3f94, #ec2757, #fcfc67);
+
+// Font Family
+// =====================================
+$ff: -apple-system, blinkmacsystemfont, ヒラギノ角ゴ pro w3,
+  hiragino kaku gothic pro, roboto, yugothic, yu gothic, 游ゴシック体,
+  游ゴシック, メイリオ, meiryo, ｍｓ ｐゴシック, ms pgothic, sans-serif;
+
+// Media Queries
+// =====================================
+$device-land: "screen and (orientation: landscape)";

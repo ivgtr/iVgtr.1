@@ -1,8 +1,8 @@
-export default {
-  // Target (https://go.nuxtjs.dev/config-target)
+const config = {
   target: 'static',
 
-  // Global page headers (https://go.nuxtjs.dev/config-head)
+  srcDir: 'src/',
+
   head: {
     title: 'irotoridori',
     meta: [
@@ -13,28 +13,55 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
-  // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  loading: { color: '#fcfc67' },
 
-  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+  css: [
+    'ress',
+    {
+      src: '~/assets/styles/styles.scss',
+      lang: 'scss'
+    }
+  ],
+
   plugins: [],
 
-  // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
-  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-    // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    [
+      '@nuxt/typescript-build',
+      {
+        typeCheck: true,
+        ignoreNotFoundWarnings: true
+      }
+    ]
   ],
 
-  // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/dotenv',
+    '@nuxtjs/style-resources',
+    'nuxt-fontawesome'
   ],
+
+  manifest: {
+    name: 'irotoridori',
+    lang: 'ja'
+  },
+
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['faTwitter', 'faGithub', 'faAmazon', 'faSteam']
+      },
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['faBlog', 'faCoffee']
+      }
+    ]
+  },
 
   tailwindcss: {
     configPath: '../tailwind.config.js',
@@ -42,10 +69,19 @@ export default {
     exposeConfig: false
   },
 
+  styleResources: {
+    scss: ['~/assets/styles/functions.scss']
+  },
+
   generate: {
     fallback: true
   },
 
-  // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {},
+
+  router: {
+    base: '/'
+  }
 }
+
+export default config

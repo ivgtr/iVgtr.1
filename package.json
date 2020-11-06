@@ -4,24 +4,39 @@
   "description": "getting over ivgtr",
   "author": "ivgtr",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.2.2",
     "husky": "^4.3.0",
-    "nuxt": "^2.14.7"
+    "nuxt": "^2.14.7",
+    "ress": "^3.0.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
+    "@nuxt/types": "^2.14.7",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^3.2.0",
     "eslint": "^7.12.1",
     "eslint-config-sumikko": "^0.0.4",
+    "node-sass": "^5.0.0",
+    "nuxt-fontawesome": "^0.4.0",
     "prettier": "^2.1.2",
+    "sass-loader": "^10.0.5",
     "stylelint": "^13.7.2",
     "stylelint-config-sumikko": "^0.0.2"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "eslint ./src/*/*.vue"
-    }
+    "hooks": {}
   }
 }
