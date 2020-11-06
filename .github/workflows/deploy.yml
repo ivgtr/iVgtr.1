@@ -26,8 +26,9 @@ jobs:
       run: echo "${{ secrets.ENV_DEPLOY }}" > .env
     - name: nuxt build
       run: |
-           npm install
-           npm run build
+           yarn install
+           yarn run build
+           yarn run generate
     - name: deploy to Firebase Hosting
       uses: w9jds/firebase-action@master
       with:
