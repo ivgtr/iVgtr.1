@@ -1,7 +1,7 @@
 <template>
-  <main class="main rounded flex items-center justify-center">
+  <main class="main w-full h-full rounded flex items-center justify-center">
     <div
-      class="flex flex-wrap items-center justify-center flex-col sm:flex-row"
+      class="rounded flex flex-wrap items-center justify-center flex-col sm:flex-row py-16 sm:py-8 mx-2 my-2 sm:px-16"
     >
       <Icon />
       <Profile />
@@ -17,8 +17,8 @@ export default Vue.extend({})
 
 <style lang="scss" scoped>
 .main {
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-  background: #fcfcf3;
+  div {
+    background: #fcfcf3;
+  }
 }
 </style>

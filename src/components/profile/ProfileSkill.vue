@@ -1,11 +1,11 @@
 <template>
-  <section class="skills">
+  <section class="skill mt-2">
     <h2>Skills</h2>
-    <ul class="flex flex-wrap">
+    <ul class="flex flex-wrap ml-2">
       <li
         v-for="(item, n) in chip"
         :key="item.id"
-        class="text-white bg-gray-700 flex text-xs ml-2 mt-1 "
+        class="text-white bg-gray-700 flex text-xs mt-1 mr-2 last:mr-0"
         :style="`animation-delay:${n * 0.1 + 1.0}s`"
       >
         <span class="inline-block h-full w-1" :class="item.color"></span>
@@ -18,32 +18,25 @@
 <script lang="ts">
 import Vue from 'vue'
 
-type localData = {
-  chip: chip[]
-}
-
-type chip = {
-  name: string
-  color: string
-}
+const chip = [
+  {
+    name: 'TypeScript',
+    color: 'bg-blue-500'
+  },
+  {
+    name: 'Vue/Nuxt',
+    color: 'bg-green-500'
+  },
+  {
+    name: 'Pro Twitter User',
+    color: 'bg-blue-400'
+  }
+]
 
 export default Vue.extend({
   data() {
     return {
-      chip: [
-        {
-          name: 'TypeScript',
-          color: 'bg-blue-500'
-        },
-        {
-          name: 'Vue/Nuxt',
-          color: 'bg-green-500'
-        },
-        {
-          name: 'Pro Twitter User',
-          color: 'bg-blue-400'
-        }
-      ]
+      chip
     }
   }
 })

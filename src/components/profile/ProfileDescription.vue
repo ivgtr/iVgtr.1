@@ -1,12 +1,12 @@
 <template>
-  <section class="description">
+  <section class="description mt-2">
     <h2>Profiles</h2>
-    <p style="animation-delay:0.8s">🎂96/11/12</p>
-    <p style="animation-delay:0.85s">We're Geeks who consume content.</p>
+    <p style="animation-delay: 0.8s">🎂 96/11/12</p>
+    <p style="animation-delay: 0.85s">We're Geeks who consume content.</p>
     <h2>Jobs</h2>
-    <p style="animation-delay:0.9s">OTAKU.</p>
+    <p style="animation-delay: 0.9s">OTAKU.</p>
     <h2>Likes</h2>
-    <p style="animation-delay:0.95s">
+    <p style="animation-delay: 0.95s">
       Demon's Souls, FPS, Tea(Jasmine茶,GoGo茶)
     </p>
   </section>
