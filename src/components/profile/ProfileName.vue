@@ -1,5 +1,5 @@
 <template>
-  <section class="name">
+  <section class="name mt-2">
     <h2 class="text-3xl text-gray-700">
       <span class="deco text-2xl mr-1">@</span>iVgtr
     </h2>

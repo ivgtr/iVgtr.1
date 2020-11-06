@@ -1,5 +1,5 @@
 <template>
-  <section class="skills">
+  <section class="skill mt-2">
     <h2>Skills</h2>
     <ul class="flex flex-wrap ml-2">
       <li

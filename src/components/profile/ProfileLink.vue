@@ -1,5 +1,5 @@
 <template>
-  <section class="link">
+  <section class="link mt-2">
     <h2>Links</h2>
     <ul class="flex flex-wrap ml-2">
       <li
@@ -82,10 +82,10 @@ ul {
     animation: scaleIn 0.4s ease-in-out backwards;
     & > a {
       &:hover {
-        transition: color 0.1s ease-in 0.05s, transform 0.3s ease-in 0.05s;
+        transition: color 0.1s ease-in, transform 0.25s ease-in;
         transform: rotate(15deg);
         svg {
-          transition: transform 0.2s ease-in 0.05s;
+          transition: transform 0.2s ease-in;
           transform: scale(1.2);
         }
       }

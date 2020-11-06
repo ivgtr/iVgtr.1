@@ -1,5 +1,5 @@
 <template>
-  <section class="description">
+  <section class="description mt-2">
     <h2>Profiles</h2>
     <p style="animation-delay: 0.8s">🎂 96/11/12</p>
     <p style="animation-delay: 0.85s">We're Geeks who consume content.</p>
