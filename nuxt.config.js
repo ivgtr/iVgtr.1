@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const config = {
   target: 'static',
 
@@ -78,6 +80,10 @@ const config = {
   },
 
   build: {},
+
+  dotenv: {
+    path: process.cwd()
+  },
 
   router: {
     base: '/'
