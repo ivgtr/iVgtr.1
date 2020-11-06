@@ -1,6 +1,13 @@
 require('dotenv').config()
 
+const env = {
+  STAGE_ENV: process.env.STAGE_ENV,
+  GA_KEY: process.env.GA_KEY
+}
+
 const config = {
+  env,
+
   target: 'static',
 
   srcDir: 'src/',
@@ -65,7 +72,8 @@ const config = {
     '@nuxtjs/pwa',
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
-    'nuxt-fontawesome'
+    'nuxt-fontawesome',
+    ['@nuxtjs/google-analytics', { id: process.env.GA_KEY }]
   ],
 
   manifest: {
