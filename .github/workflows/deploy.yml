@@ -15,8 +15,8 @@ jobs:
     - name: nuxt build
       run: |
            yarn install
-           yarn run build
-           yarn run generate
+           yarn build
+           yarn generate
     - name: deploy to Firebase Hosting
       uses: w9jds/firebase-action@master
       with:
