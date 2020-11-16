@@ -10,5 +10,16 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  data() {
+    return {
+      long: false
+    }
+  },
+  methods: {
+    onClick() {
+      this.long = !this.long
+    }
+  }
+})
 </script>

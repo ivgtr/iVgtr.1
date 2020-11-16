@@ -1,6 +1,8 @@
 <template>
   <div class="root relative grid items-center overflow-hidden">
-    <nuxt />
+    <main class="main w-full h-full rounded flex items-center justify-center">
+      <nuxt />
+    </main>
   </div>
 </template>
 
