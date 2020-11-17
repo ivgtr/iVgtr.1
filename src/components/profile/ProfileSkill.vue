@@ -1,7 +1,7 @@
 <template>
   <section class="skill mt-2">
     <h2>Skills</h2>
-    <ul class="flex flex-wrap ml-2">
+    <ul class="flex flex-wrap">
       <li
         v-for="(item, n) in chip"
         :key="item.id"

@@ -1,7 +1,7 @@
 <template>
   <section class="link mt-2">
     <h2>Links</h2>
-    <ul class="flex flex-wrap ml-2">
+    <ul class="flex flex-wrap">
       <li
         v-for="(item, n) in link"
         :key="item.id"
