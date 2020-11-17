@@ -3,7 +3,7 @@
     <h2>Skills</h2>
     <ul class="flex flex-wrap">
       <li
-        v-for="(item, n) in chip"
+        v-for="(item, n) in badges"
         :key="item.id"
         class="text-white bg-gray-700 flex text-xs mt-1 mr-2 last:mr-0"
         :style="`animation-delay:${n * 0.1 + 1.0}s`"
@@ -18,25 +18,25 @@
 <script lang="ts">
 import Vue from 'vue'
 
-const chip = [
-  {
-    name: 'TypeScript',
-    color: 'bg-blue-500'
-  },
-  {
-    name: 'Vue/Nuxt',
-    color: 'bg-green-500'
-  },
+const badges = [
   {
     name: 'Pro Twitter User',
     color: 'bg-blue-400'
+  },
+  {
+    name: 'Vue/NuxtJS',
+    color: 'bg-green-500'
+  },
+  {
+    name: 'TypeScript',
+    color: 'bg-blue-500'
   }
 ]
 
 export default Vue.extend({
   data() {
     return {
-      chip
+      badges
     }
   }
 })
