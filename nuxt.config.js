@@ -73,6 +73,12 @@ const config = {
     '@nuxtjs/dotenv',
     '@nuxtjs/style-resources',
     'nuxt-fontawesome',
+    [
+      'nuxt-lazy-load',
+      {
+        directiveOnly: true
+      }
+    ],
     ['@nuxtjs/google-analytics', { id: process.env.GA_KEY }]
   ],
 

@@ -17,6 +17,7 @@
     "@nuxtjs/pwa": "^3.2.2",
     "husky": "^4.3.0",
     "nuxt": "^2.14.7",
+    "nuxt-lazy-load": "^1.2.4",
     "ress": "^3.0.0"
   },
   "devDependencies": {

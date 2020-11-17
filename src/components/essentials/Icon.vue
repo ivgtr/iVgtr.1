@@ -6,7 +6,9 @@
       class="icon_inner relative box-border overflow-hidden bg-white bg-cover"
     >
       <img
-        :src="require('~/assets/images/icon.jpg')"
+        v-lazy-load
+        :data-src="require('~/assets/images/icon.jpg')"
+        :src="require('~/assets/images/thum_icon.jpg')"
         alt="icon"
         rel="preload"
         class="w-full h-full object-contain"
