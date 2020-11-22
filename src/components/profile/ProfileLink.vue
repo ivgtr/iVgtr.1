@@ -34,7 +34,7 @@ const link = [
   {
     icon: ['fas', 'blog'],
     title: 'blog',
-    link: 'https://ivgtr.hatenablog.jp/',
+    link: 'https://scrapbox.io/iVgtr/',
     color: 'hover:bg-blue-800'
   },
   {
