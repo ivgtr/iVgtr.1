@@ -7,8 +7,8 @@
     >
       <img
         v-lazy-load
-        :data-src="require('~/assets/images/icon.jpg')"
-        :src="require('~/assets/images/thum_icon.jpg')"
+        :data-src="require('~/assets/images/essentials/icon.jpg')"
+        :src="require('~/assets/images/essentials/thum_icon.jpg')"
         alt="icon"
         rel="preload"
         class="w-full h-full object-contain"
