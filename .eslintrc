@@ -1,0 +1,3 @@
+{
+  "extends": ["eslint-config-sumikko/node","eslint-config-sumikko/react"]
+}
