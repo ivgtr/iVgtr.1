@@ -1,0 +1,21 @@
+@tailwind base;
+
+#root {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: no-repeat center center/300% 300%
+    linear-gradient(130deg, #1cc6b8, #3f3f94, #ec2757, #fcfc67, #eb6d71);
+}
+
+.bg-cream {
+  --tw-bg-opacity: 1;
+
+  background-color: #fcfcf3;
+}
+
+@tailwind components;
+@tailwind utilities;
