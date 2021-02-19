@@ -486,6 +486,11 @@
     "@typescript-eslint/types" "4.15.1"
     eslint-visitor-keys "^2.0.0"
 
+"@uit/glitch-image@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@uit/glitch-image/-/glitch-image-0.0.10.tgz#6bb040a7c07747513b23ce06ba3deebf86595505"
+  integrity sha512-kuLhLUMNPS8snH6Zwk0kTltm6YRNDsh1jTAXP1JElpcIUgsyHh4clZqQczMEHC7jjsslj3MGp1MBuLApn67Nng==
+
 "@vue/eslint-config-typescript@^7.0.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@vue/eslint-config-typescript/-/eslint-config-typescript-7.0.0.tgz#220c70c2edf7a253e739298525f4d401b8ef0038"

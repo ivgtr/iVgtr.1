@@ -1,11 +1,30 @@
 import React from 'react'
+import Icon from '../components/profile/ProfileIcon'
+import Contents from '../components/profile/ProfileContents'
 
-const Home = () => {
+const ProfileIcon = () => {
   return (
-    <>
-      <div className="text-red-500 dark:text-blue-500">test</div>
-    </>
+    <div>
+      <Icon />
+    </div>
   )
 }
 
-export default Home
+const ProfileContents = () => {
+  return (
+    <div>
+      <Contents />
+    </div>
+  )
+}
+
+const Profile = () => {
+  return (
+    <div className="flex flex-wrap items-center justify-center flex-col sm:flex-row">
+      <ProfileIcon />
+      <ProfileContents />
+    </div>
+  )
+}
+
+export default Profile

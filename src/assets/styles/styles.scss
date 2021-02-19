@@ -11,11 +11,40 @@
     linear-gradient(130deg, #1cc6b8, #3f3f94, #ec2757, #fcfc67, #eb6d71);
 }
 
-.bg-cream {
-  --tw-bg-opacity: 1;
-
-  background-color: #fcfcf3;
-}
-
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .description {
+    &::before {
+      content: "- ";
+    }
+  }
+  .bg-rainbow {
+    --tw-bg-opacity: 1;
+
+    background: no-repeat center center/300% 300%
+      linear-gradient(130deg, #1cc6b8, #3f3f94, #ec2757, #fcfc67, #eb6d71);
+  }
+
+  .fill-transparent {
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-cream {
+    --tw-bg-opacity: 1;
+
+    background-color: #fcfcf3;
+  }
+  @variants dark {
+    .bg-dark {
+      --tw-bg-opacity: 1;
+
+      background-color: #14242c;
+    }
+
+    .text-gray {
+      color: #c4c7c9;
+    }
+  }
+}
